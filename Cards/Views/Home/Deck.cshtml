@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Deck";
+}
+
+<h2>Deck</h2>
+
+
+<table class="table-striped">
+    @for (int i = 0; i < ViewBag.Hand.Count; i++)
+    {
+        
+        <tr class="col-md-4" align="center">
+            <td>
+                <div>
+                    <h1>@ViewBag.Hand[i]["value"] of @ViewBag.Hand[i]["suit"]</h1>
+
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img src="@ViewBag.Hand[i]["image"]" />
+                </div> 
+            </td>       
+
+        </tr>
+           
+                   
+                
+    }
+</table>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
